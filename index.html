@@ -1,0 +1,1619 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>syllabus</title>
+    <link id="favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%220.9em%22 font-size=%22100%22>📖</text></svg>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.12/dist/katex.min.css" />
+    <style>
+        body { background-color: white; }
+        #toc { font-size: 85%; width: 14em; position: fixed; min-height: 95%; max-height: 95%; overflow: hidden auto; padding-left: 0.75em; padding-right: 1em; margin-right: 1em; font-family: "Open Sans"; }
+        #toc ol { list-style-type: decimal; padding-inline-start: 1em; }
+        #toc a { text-decoration: none; }
+        #display a { text-decoration: none black; text-underline-offset: 2px; }
+        #display { width: 100%; margin-left: 15em; max-height: 100%; min-height: 100%; overflow: hidden auto; padding-left: 1em; padding-right: 1em; border-left: 1px solid rgb(240, 240, 240); font-family: "Open Sans"; }
+        .title { text-align: center; font-size: 250%; font-weight: bold; color: black; margin-bottom: 0px; }
+        .subtitle { text-align: center; font-size: 150%; font-weight: bold; color: black; margin-top: 0.2em; }
+        .hanchor { text-decoration: none; color: inherit; }
+        h1 { color: darkblue; border-bottom: 2px solid darkblue; }
+        h2 { border-bottom: 1px solid black; }
+        h3 { border-bottom: 1px dotted black; }
+        h1, h2, h3, h4, h5, h6 { width: 100%; margin-block: 0.5em; }
+        #display .block ul { width: 100%; margin-left: 1em; padding-left: 1em; }
+        #display .block ol { width: 100%; margin-left: 1em; padding-left: 1em; }
+        code { width: 100%; background-color: rgba(0, 0, 0, 0.03); border-radius: 0px; font-size: 1.2em; white-space: pre-wrap; margin-top: 3px; margin-right: 3px; }
+        pre code { border-right: 1px solid black; }
+        code.language-Python { background-color: rgba(0, 0, 0, 0); font-size: 1.2em; }
+        pre { width: 100%; text-indent: 0.75em; padding-left: 0.5em; margin-left: 1em; white-space: pre-wrap; border-left: 3px solid black; background-color: rgba(0, 0, 0, 0.03); line-height: 1.5; overflow-x: clip; }
+        pre.language-Python { border-left: 5px solid blue; padding: 0.5em; margin-left: 1em; margin-right: 1em; line-height: 1.5; overflow-x: auto; }
+        .block { display: flex; }
+        .block.inline-html { display: block; }
+        .hr { width: 100%; height: 1px; display: block; margin: 0.5em; margin-block: 0.5em; border-top: 1px solid black; }
+        #display li > div { display: flex; }
+        p { width: 100%; display: block; margin-block: 0.5em; }
+        #display li { width: 100%; }
+        li .block p { width: 100%; display: block; margin-top: 0.5em; margin-bottom: 0.5em; }
+        li .block:first-of-type p { width: 100%; display: block; margin-top: 0em; margin-bottom: 0em; }
+        .section > .block ol ~ .line-number { display: none; }
+        .section > .block ul ~ .line-number { display: none; }
+        .section > .block pre ~ .line-number { display: none; }
+        .section > .block code ~ .line-number { }
+        pre .line-number { float: right; font-size: 8px; text-align: center; text-indent: 0px; }
+        .line-number { float: right; white-space: pre-wrap; font-size: 10%; }
+        p + .line-number { margin-block-start: 8px; }
+        .block > div.linenumber { margin-block-start: -0.5em; }
+        .blockquote + div.line-number { margin-top: 1rem; }
+        h1 + .line-number { margin-block-start: 20em; }
+        h2 + .line-number { margin-block-start: 15em; }
+        h3 + .line-number { margin-block-start: 15em; }
+        h4 + .line-number { margin-block-start: 15em; }
+        h5 + .line-number { margin-block-start: 15em; }
+        h6 + .line-number { margin-block-start: 15em; }
+        .blockquote { width: 100%; display: block; margin: 1em; border: 1px solid black; padding: 1em; border-radius: 0.5em; }
+        details > summary { font-weight: bold; }
+        details { padding-left: 0.5em; }
+        details[open] { border: 1px solid black; padding: 0em 0em 0em 0.5em; }
+        table { padding: 0px; }
+        table tr { border-top: 1px solid rgb(204, 204, 204); background-color: white; margin: 0px; padding: 0px; }
+        table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+        table tr th { font-weight: bold; border: 1px solid rgb(204, 204, 204); text-align: left; margin: 0px; padding: 6px 13px; }
+        table tr td { border: 1px solid rgb(204, 204, 204); text-align: left; margin: 0px; padding: 6px 13px; }
+        table tr th :first-child, table tr td :first-child { margin-top: 0px; }
+        table tr th :last-child, table tr td :last-child { margin-bottom: 0px; }
+        .katex { font-size: inherit !important; }
+        .katex-display { text-align: center; margin: 0.5em; font-size: 1.1em !important; }
+        @media print {
+          body, html { margin: 0in; color: rgb(0, 0, 0); height: auto; background-color: rgb(255, 255, 255); border: none; display: inline; }
+          h1, h2, h3, h4, h5, h6 { break-after: avoid; }
+          h1, h2, h3, h4, h5, h6 { width: 100%; margin-block: 0.1em; }
+          h1 { font-size: 1.25em; border-bottom: 1px solid darkblue; }
+          h2 { font-size: 1.15em; border-bottom: 1px solid darkblue; }
+          h3 { font-size: 1.1em; }
+          h4, h5, h6 { font-size: 1.05em; }
+          p { margin-top: 0px; margin-bottom: 0.5em; }
+          .title { break-before: page; margin-top: 0px; }
+          #toc { display: none; font-size: 100%; margin: 0px; width: 100%; overflow-y: hidden; padding-left: 0px; padding-right: 0px; }
+          #display { margin-left: 0em; width: 100%; padding-left: 0px; padding-right: 0px; border: none; overflow-wrap: break-word; }
+          .katex { font: 1em / 1 KaTeX_Main, "Times New Roman", serif; white-space: nowrap; text-indent: 0px; text-rendering: auto; }
+          .katex-display { margin-top: 0px; }
+        }
+        #toc > ol ol { display: none; }
+        body { background-image: url("https://rweigel.github.io/biedit/img/paper.png"); }
+        #toc > ol ol { display: none; }
+        body { background-image: url("https://rweigel.github.io/biedit/img/paper.png"); }
+
+    </style>
+
+
+    <script>
+        function tocClickListen() {
+            // No jQuery b/c also used in stand-alone HTML.
+            hs = document.querySelectorAll('#toc > ol ol');
+            for (var i = 0; i < hs.length; i++) {
+              if (hs[i].previousElementSibling) {
+                var el = hs[i].previousElementSibling.firstElementChild;
+                if (el.length == 0) {
+                  continue;
+                }
+                el.addEventListener('click', event => {
+                  var ns = event.target.parentNode.nextElementSibling;
+                  if (ns.style.display === 'none') {
+        ns.style.display = 'block';
+                  } else {
+        ns.style.display = 'none';
+                  }
+                });
+              }
+            }
+          }
+        if (
+            document.readyState === "complete" ||
+            (document.readyState !== "loading" &&
+              !document.documentElement.doScroll)
+        ) {
+          tocClickListen();
+        } else {
+          document.addEventListener("DOMContentLoaded", tocClickListen);
+        }
+    </script>
+
+</head>
+
+<body style="display: flex;min-width: 50%;max-height:100%;">
+
+    <div id="toc">
+        <ol>
+            <li><a number="1" href="#class-schedule">Class Schedule</a></li>
+            <ol style="display: none;">
+                <li><a number="1.1" href="#tuesday-august-24th">Tuesday, August 24th</a></li>
+                <li><a number="1.2" href="#thursday-august-26th">Thursday, August 26th</a></li>
+                <li><a number="1.3" href="#tuesday-august-31st">Tuesday, August 31st</a></li>
+                <li><a number="1.4" href="#thursday-september-2nd">Thursday, September 2nd</a></li>
+                <li><a number="1.5" href="#tuesday-september-7th">Tuesday, September 7th</a></li>
+                <li><a number="1.6" href="#thursday-september-9nd">Thursday, September 9nd</a></li>
+                <li><a number="1.7" href="#tuesday-september-14th">Tuesday, September 14th</a></li>
+                <li><a number="1.8" href="#thursday-september-16th">Thursday, September 16th</a></li>
+                <li><a number="1.9" href="#tuesday-september-21st">Tuesday, September 21st</a></li>
+                <li><a number="1.10" href="#thursday-september-23rd">Thursday, September 23rd</a></li>
+                <li><a number="1.11" href="#tuesday-september-28th">Tuesday, September 28th</a></li>
+                <li><a number="1.12" href="#thursday-september-30th">Thursday, September 30th</a></li>
+                <li><a number="1.13" href="#tuesday-october-5th">Tuesday, October 5th</a></li>
+                <li><a number="1.14" href="#thursday-october-7th">Thursday, October 7th</a></li>
+                <li><a number="1.15" href="#tuesday-october-12th">Tuesday, October 12th</a></li>
+                <li><a number="1.16" href="#thursday-october-14th">Thursday, October 14th</a></li>
+                <li><a number="1.17" href="#tuesday-october-19th">Tuesday, October 19th</a></li>
+                <li><a number="1.18" href="#thursday-october-21st">Thursday, October 21st</a></li>
+                <li><a number="1.19" href="#tuesday-october-26th">Tuesday, October 26th</a></li>
+                <li><a number="1.20" href="#thursday-october-28th">Thursday, October 28th</a></li>
+                <li><a number="1.21" href="#tuesday-november-2nd">Tuesday, November 2nd</a></li>
+                <li><a number="1.22" href="#thursday-november-4th">Thursday, November 4th</a></li>
+                <li><a number="1.23" href="#tuesday-november-9th">Tuesday, November 9th</a></li>
+                <li><a number="1.24" href="#thursday-november-11th">Thursday, November 11th</a></li>
+                <li><a number="1.25" href="#tuesday-november-16th" class="">Tuesday, November 16th</a></li>
+                <li><a number="1.26" href="#thursday-november-18th">Thursday, November 18th</a></li>
+                <li><a number="1.27" href="#tuesday-november-23rd">Tuesday, November 23rd</a></li>
+                <li><a number="1.28" href="#thursday-november-25th">Thursday, November 25th</a></li>
+                <li><a number="1.29" href="#tuesday-november-30th">Tuesday, November 30th</a></li>
+                <li><a number="1.30" href="#thursday-december-2nd" class="highlighted">Thursday, December 2nd</a></li>
+                <li><a number="1.31" href="#thursday-december-9th">Thursday, December 9th</a></li>
+            </ol>
+            <li><a number="2" href="#topics">Topics</a></li>
+            <li><a number="3" href="#format-of-course">Format of Course</a></li>
+            <li><a number="4" href="#discord">Discord</a></li>
+            <li><a number="5" href="#succeeding-in-this-course">Succeeding in this Course</a></li>
+            <li><a number="6" href="#grading">Grading</a></li>
+            <li><a number="7" href="#textbook">Textbook</a></li>
+            <li><a number="8" href="#suggested-references">Suggested References</a></li>
+            <li><a number="9" href="#important-dates">Important Dates</a></li>
+            <li><a number="10" href="#university-policy">University Policy</a></li>
+            <li><a number="11" href="#disability-accommodations">Disability Accommodations</a></li>
+            <li><a number="12" href="#counseling-and-student-support">Counseling and Student Support</a></li>
+        </ol>
+    </div>
+    <div id="display">
+        <div class="section">
+
+            <div class="block inline-html">
+
+                <div style="text-align:center;font-size:150%">
+                    <div class="block">
+                        <p><b>PHYS 305 - Electromagnetic Theory</b></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p>Day and Time: Tuesday/Thursday from 12:00 pm - 1:15 pm (on Zoom)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Office Hours: Tuesday/Thursday from 11:00 am – noon (on Zoom) and immediately after class</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discord URL: See email</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Instructor: Bob Weigel</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Email: <a href="mailto:rweigel@gmu.edu">rweigel@gmu.edu</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Office: 259 Planetary Hall</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Course URL: <a href="http://rweigel.github.io/phys305/">http://rweigel.github.io/phys305/</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="block">
+                <p class=""><strong>Homeworks and Exams</strong>: <a href="hw1.html">1</a> | <a href="hw2.html">2</a> | <a href="hw3.html">3</a> | <a href="hw4.html">4</a> | <a href="hw5.html">5</a> | <a href="hw6.html">6</a> | <a href="hw7.html">7</a> | <a href="midterm.html">Midterm</a> | <a href="hw8.html">8</a> | <a href="hw9.html">9</a> | <a href="hw10.html">10</a> | <a href="hw11.html">11</a> | <a href="hw12.html">12</a> | <a href="final.html">Final</a></p>
+
+            </div>
+            <div class="block">
+                <p><strong>Notes</strong></p>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="vectors.html">Vectors</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="vector_fields.html">Vector Fields</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="field_lines.html">Field Lines</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="equipotentials.html">Equipotentials</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="flux.html">Flux</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="divergence.html">Divergence</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="binomial_expansion.html">Binomial Expansion</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="symmetry.html">Symmetry</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="charge_densities.html">Charge Densities</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="continuous_charge_distributions.html">Continuous Charge Distributions</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="gauss_law.html">Gauss’s Law</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="electrostatic_potential.html">Electrostatic Potential</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="capacitance.html">Capacitance</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="boundary_value_problems.html">Boundary Value Problems</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="method_of_images.html">Method of Images</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="monopole_expansion.html">Monopole Expansion</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="continuous_electric_dipole_distributions.html">Continuous Electric Dipole Distributions</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="induced_polarization.html">Induced Polarization</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="vector_potential.html">Vector Potential</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="magnetic_dipoles.html">Magnetic Dipoles</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="magnetization.html">Magnetization</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="continuous_magnetic_dipole_distributions.html">Continuous Magnetic Dipole Distributions</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="induced_magnetization.html">Induced Magnetization</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--
+%* <a href="polarization.html">Polarization</a>
+%* <a href="polarized_objects.html">Polarized Objects</a>
+%* <a href="magnetized_objects.html">Magnetized Objects</a>
+-->
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h1><a name="class-schedule" number="1" class="hanchor" href="#class-schedule"><span class="hnumber">1 </span> <span class="htext">Class Schedule</span></a></h1>
+
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-august-24th" number="1.1" class="hanchor" href="#tuesday-august-24th"><span class="hnumber">1.1 </span> <span class="htext">Tuesday, August 24th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/p1sgQwH8YagGQ89O5z2SU1u7OoEpi3NloJpBqgfBGelTdyBYpxGCdmB4Rzal-zei.yqEFeRi4WRIu_O3P">Class Video</a> (password in Discord under #recordings)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Introductions</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss syllabus</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Review <a href="vectors.html">Vectors</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-august-26th" number="1.2" class="hanchor" href="#thursday-august-26th"><span class="hnumber">1.2 </span> <span class="htext">Thursday, August 26th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/qT-AzI9EFL8CS0Rs1O3srT2hp0pboc7Fv4H2978rVn9nOop1vwEi5e2yM1YHnX0f.NiC4ps_UgetKuDUu">Class Video</a> (password in Discord under #recordings)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Assign <a href="hw1.html">HW 1</a> covering <a href="vectors.html">Vectors</a>, <a href="vector_fields.html">Vector Fields</a>, <a href="field_lines.html">Field Lines</a>, and <a href="equipotentials.html">Equipotentials</a>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss <a href="hw1.html">HW 1</a> topics</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-august-31st" number="1.3" class="hanchor" href="#tuesday-august-31st"><span class="hnumber">1.3 </span> <span class="htext">Tuesday, August 31st</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/O6qDLFN8Wl47ZoCYZzgroRAWkU5zbjcmGG5BPkpLKE5ASmfQZL9v3nNcgKiSEBMY.ZQc6TOQg1aVKVwXW">Class Video</a> (password in Discord under #recordings)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Answer questions on <a href="hw1.html">HW 1</a> topics</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-september-2nd" number="1.4" class="hanchor" href="#thursday-september-2nd"><span class="hnumber">1.4 </span> <span class="htext">Thursday, September 2nd</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/xQ4IgtNx9iCAcol7-LxtGbVEb2QFs1sM_KSEuzyI2ORynxZTSuOwwfXzIcIFi-pi.mIiZfgL9-H599tUe">Class Video</a> (password in Discord under #recordings)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw1.html">HW #1</a> due at 3:00 pm; I will be available after class for last–minute questions</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss questions asked about HW #1 topics</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Assign <a href="hw2.html">HW #2</a> covering <a href="flux.html">Flux</a>, <a href="divergence.html">Divergence</a>, <a href="binomial_expansion.html">Binomial Expansion</a>, and <a href="symmetry.html">Symmetry</a>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss modified instructions on submitting HWs</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Cover <a href="hw2.html">HW #2</a> topics</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-september-7th" number="1.5" class="hanchor" href="#tuesday-september-7th"><span class="hnumber">1.5 </span> <span class="htext">Tuesday, September 7th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/NLJGv6lmwCdbkCfVSQHDNcOFaGv_KpEZ0w5uuPi2kt6hEpz_DOL6ocdQvnKtfNDy.uLvp9kPNP7EwGyQN">Class Video</a> (password in Discord under #recordings)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Answer questions on <a href="hw2.html">HW #2</a> topics (<a href="flux.html">Flux</a>, <a href="divergence.html">Divergence</a>, <a href="binomial_expansion.html">Binomial Expansion</a>, and <a href="symmetry.html">Symmetry</a>)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-september-9nd" number="1.6" class="hanchor" href="#thursday-september-9nd"><span class="hnumber">1.6 </span> <span class="htext">Thursday, September 9nd</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/Xs5uXw81s2zt9E_qfbh1dbaY8MNo0dT-5nd53UmZetfno_Qkzfga8c7SzT6ESCaV.wnvsAqt68tX3vNWe">Class Video</a> (password in Discord under #recordings)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Return graded HW #1 and post solutions (will do later in day … I am a few hours behind); discuss common errors</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw2.html">HW #2</a> due at 3:00 pm</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Cover Coulomb’s Law, Electric Field, Superposition, Discrete Charge Distributions, <a href="charge_densities.html">Charge Densities</a>, and <a href="continuous_charge_distributions.html">Continuous Charge Distributions</a>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw3.html">HW #3</a> will be posted at about 3 pm.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-september-14th" number="1.7" class="hanchor" href="#tuesday-september-14th"><span class="hnumber">1.7 </span> <span class="htext">Tuesday, September 14th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/wDEldmZO8k5C2KIOHE0BEzI3JvDPEnfTAl-ruVuOmiJTTRZdbzAZzcL8bQKfSyYn.SsFh6tAlqfolVGo2">Class Video</a> (password in Discord under #recordings)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Comments on common errors on <a href="hw2.html">HW #2</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Answer questions on <a href="hw3.html">HW #3</a> topics.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-september-16th" number="1.8" class="hanchor" href="#thursday-september-16th"><span class="hnumber">1.8 </span> <span class="htext">Thursday, September 16th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/dEhAu-OAButYrJJADVm0aiYqkgtZmwzfauLepoQCyeVIa43lTNECblqEf5s83LjO.oy0IrgiXGQLxFu_E">Class Video</a> (password in Discord under #recordings)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>I have started returning graded <a href="hw2.html">HW #2</a>; if you have not received an email from me, expect one by the end of the day. Solutions are on <a href="(hw2.html">the same page</a> as the problems.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw3.html">HW #3</a> due at 3:00 pm</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Cover <a href="gauss_law.html">Gauss’s Law</a> and <a href="electrostatic_potential.html">Electrostatic Potential</a>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw4.html">HW #4</a> posted after class.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-september-21st" number="1.9" class="hanchor" href="#tuesday-september-21st"><span class="hnumber">1.9 </span> <span class="htext">Tuesday, September 21st</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/L3PlS7z5u8wfRdNhmQ--CT9ebpcTAXap4udR0zAFkRsL5v1lv8tpkdv8GvcUtW08.V08AvqC-UBWdNF4P">Class Video</a> (password in Discord under #recordings)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Answer questions on <a href="hw4.html">HW #4</a> topics</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-september-23rd" number="1.10" class="hanchor" href="#thursday-september-23rd"><span class="hnumber">1.10 </span> <span class="htext">Thursday, September 23rd</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/LBXy-Hnb_cDp-bpWmXZzUlqiVjLx9CjIP4yq82Dl4MPe_RaugyxFFj6HDcmNwM5k.3R2ZQCfZhSGhTnLe">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Graded <a href="hw3.html">HW #3</a> will be returned later today.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw4.html">HW #4</a> due at 3pm.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Introduce <a href="capacitance.html">Capacitance</a> and <a href="boundary_value_problems.html">Boundary Value Problems</a>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Assign <a href="hw5.html">HW #5</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-september-28th" number="1.11" class="hanchor" href="#tuesday-september-28th"><span class="hnumber">1.11 </span> <span class="htext">Tuesday, September 28th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/fDAC-NbqobSVP5USicspApEy690wwswM0L8FK0aihmqrcJtqcEM-mEK67neHbkoL.mMDXDwYfauIYjfZY">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Comments on <a href="hw4.html">HW #4</a>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Answer questions on <a href="hw5.html">HW #5</a> topics.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-september-30th" number="1.12" class="hanchor" href="#thursday-september-30th"><span class="hnumber">1.12 </span> <span class="htext">Thursday, September 30th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/5STbgJkpQbp0fd1gl7ZIQGgSq_0QMNJQkgbaEKxeasa3iaMHHen6XJzTqrZyiQxN.nkJjEfp9RgskV18e">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw5.html">HW #5</a> due at 3pm.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Comment on re–scheduling exam.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Assign <a href="hw6.html">HW #6</a> covering 2–D <a href="boundary_value_problems.html">Boundary Value Problems</a>.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-october-5th" number="1.13" class="hanchor" href="#tuesday-october-5th"><span class="hnumber">1.13 </span> <span class="htext">Tuesday, October 5th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/XEaltG94BTuzli9QWHUz6-kxqNBM6FuJcigoDByiBvNYymOXNDOwd7mjB29hpy0J.SkqiZycdaVSGf4FV">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Answer questions on <a href="hw6.html">HW #6</a> topics</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss Midterm and Turkeybunion’s question.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-october-7th" number="1.14" class="hanchor" href="#thursday-october-7th"><span class="hnumber">1.14 </span> <span class="htext">Thursday, October 7th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/KBDm6YSwJu-RKwYEDQEUh01bVIOrvXyF4fP8twTn2uVgPk4vja5vxBbPAHCt9Pfd.3vGSB_o0zQ4ZpRYF">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw6.html">HW #6</a> due.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Assign <a href="hw7.html">HW #7</a> covering the <a href="method_of_images.html">method of images</a> and the <a href="monopole_expansion.html">monopole expansion</a>. </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-october-12th" number="1.15" class="hanchor" href="#tuesday-october-12th"><span class="hnumber">1.15 </span> <span class="htext">Tuesday, October 12th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/2i6-p1GGfJYI-buCLxxeAlhXheRt0l0iNuZyoACZTd8kX406fnyo4fEe9I9ihJQ.8Apt6BVkkLe0RZtN">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Post <a href="midterm.html">mid–term review study guide</a>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>No class (Monday classes/labs meet Tuesday. Tuesday classes do not meet this week.)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Will also be available during regular class time and ad–hoc sessions on Zoom.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-october-14th" number="1.16" class="hanchor" href="#thursday-october-14th"><span class="hnumber">1.16 </span> <span class="htext">Thursday, October 14th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/2i6-p1GGfJYI-buCLxxeAlhXheRt0l0iNuZyoACZTd8kX406fnyo4fEe9I9ihJQ.8Apt6BVkkLe0RZtN">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw7.html">HW #7</a> due at 3 pm.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Mid-term review. See the <a href="midterm.html">mid–term review study guide</a>.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Will return graded <a href="hw6.html">HW #6</a> later today. Solutions have been posted.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Will post solutions to <a href="hw7.html">HW #7</a> later today.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-october-19th" number="1.17" class="hanchor" href="#tuesday-october-19th"><span class="hnumber">1.17 </span> <span class="htext">Tuesday, October 19th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="midterm.html">Mid-term exam</a> during class time in Innovation Hall, room 131. Closed book and note. I will provide a list of equations that you need to know.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-october-21st" number="1.18" class="hanchor" href="#thursday-october-21st"><span class="hnumber">1.18 </span> <span class="htext">Thursday, October 21st</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/kGfw5XBjEDhVmK6Pn_kgX79dJxSNTnPwZurq4TNMbl8-AHMEeUXiQrLfT1DWXoD8.6rFDVXYUb-K6lm2r">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Cover Dipoles (3.4 of Griffiths), Polarization (4.1 of Griffiths), and Bound Charge Densities (4.2 of Griffiths).</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw8.html">HW #8</a> will cover above topics and be posted later today.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>I have not finished grading HW #7. It should be done by the weekend.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>You should have received your graded midterm today by email.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss <a href="midterm.html">Mid-term exam</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="block inline-html">
+
+                <img src="figures/grades.png" width="300px">
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-october-26th" number="1.19" class="hanchor" href="#tuesday-october-26th"><span class="hnumber">1.19 </span> <span class="htext">Tuesday, October 26th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/k5e2n-nZvp_4zrRKGe7O8PdWpDQlqKBBx4zhHltvyr2xvzNI05Y9OpcpeUwBKywv.8kITOZmBa6QNht_x">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw8.html">HW #8</a> due at 3 pm.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Will return HW #7 on Thursday. Sorry for the delay!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Answer questions on <a href="hw8.html">HW #8</a> topics</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-october-28th" number="1.20" class="hanchor" href="#thursday-october-28th"><span class="hnumber">1.20 </span> <span class="htext">Thursday, October 28th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/fycKC35n1Wx56wr4L7Kln4oSS_p2ztXG29JIMWNgZKoNcPUzBJiV1EXKndRD5w.QHK4KxDiU-JhhIap">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Computing Bound Charge Densities (4.2 of Griffiths) and resulting field. Introduction to induced polarization in linear dielectrics (4.4 of Griffiths).</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Assign <a href="hw9.html">HW #9</a> covering above topics.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-november-2nd" number="1.21" class="hanchor" href="#tuesday-november-2nd"><span class="hnumber">1.21 </span> <span class="htext">Tuesday, November 2nd</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw9.html">HW #9</a> discussion</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-november-4th" number="1.22" class="hanchor" href="#thursday-november-4th"><span class="hnumber">1.22 </span> <span class="htext">Thursday, November 4th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/ZZySfZ86dahPkI6fX21l8wWnVKiWkolaV1Gz25zqlMonuVwe9NyttnCbtGWIu8sC.KpA1dG7mjI2J9VjL">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Lorentz force Law and Biot–Savart law</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Assign <a href="hw10.html">HW #10</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-november-9th" number="1.23" class="hanchor" href="#tuesday-november-9th"><span class="hnumber">1.23 </span> <span class="htext">Tuesday, November 9th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/dMbfD_UiEAB0C1IsVOvcNNRvFe4x6ftlAArmOZ8BAG5LOUKAn9aPOOZM_MQ818fg.O5Fjfbnd3OhaaTLm">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss <a href="hw10.html">HW #10</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-november-11th" number="1.24" class="hanchor" href="#thursday-november-11th"><span class="hnumber">1.24 </span> <span class="htext">Thursday, November 11th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/HHHBlyANQPcYHMsLqsHrXNzYsdK_1gzWyEvTYntrVt8nb2GSx2TQIrkhxc0qfsfX.RuakjL7i9v_5egy4">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Cover divergence and curl of <span len="12" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <semantics>
+                                                <mrow>
+                                                    <mi mathvariant="bold">B</mi>
+                                                </mrow>
+                                                <annotation encoding="application/x-tex">\mathbf{B}</annotation>
+                                            </semantics>
+                                        </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord mathbf">B</span></span></span></span> and Ampere’s law</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw9.html">HW #9</a> will be returned later today</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw10.html">HW #10</a> due at 3 pm</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw11.html">HW #11</a> posted later today</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2 class=""><a name="tuesday-november-16th" number="1.25" class="hanchor" href="#tuesday-november-16th"><span class="hnumber">1.25 </span> <span class="htext">Tuesday, November 16th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li class="">
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/xjckbHA4ZSYhMYZuaM6uX5MjuJZs0lGAbV9vs5bRo-fSbflp3RAoE6GCkJabrzL9.bpUmGau1T1Ym24hE">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss <a href="hw11.html">HW #11</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-november-18th" number="1.26" class="hanchor" href="#thursday-november-18th"><span class="hnumber">1.26 </span> <span class="htext">Thursday, November 18th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/Zm-xH-qxByEgjxNcaCNQETzvksO0Cl7OQ_EoERI57U3x150VjCnBpP589oDUCkLF.emBu1fF9ZZTQHhS7">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><a href="hw11.html">HW #11</a> due</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss <a href="vector_potential.html">Magnetic Vector Potential</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Assign <a href="hw12.html">HW #12</a> covering <a href="vector_potential.html">Magnetic Vector Potential</a>, Magnetization, Bound Current Densities, the Auxiliary Field <span len="12" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <semantics>
+                                                <mrow>
+                                                    <mi mathvariant="bold">H</mi>
+                                                </mrow>
+                                                <annotation encoding="application/x-tex">\mathbf{H}</annotation>
+                                            </semantics>
+                                        </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord mathbf">H</span></span></span></span>, and Ampere’s Law for <span len="12" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                                            <semantics>
+                                                <mrow>
+                                                    <mi mathvariant="bold">H</mi>
+                                                </mrow>
+                                                <annotation encoding="application/x-tex">\mathbf{H}</annotation>
+                                            </semantics>
+                                        </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord mathbf">H</span></span></span></span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-november-23rd" number="1.27" class="hanchor" href="#tuesday-november-23rd"><span class="hnumber">1.27 </span> <span class="htext">Tuesday, November 23rd</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/ZDczLup1iryB7h9ckD63vh75jPHuI7uApaKVyJcJpTy3YKnWV9OmPBHfkAcagyvd.NGrBsa5fVv4cd5Qp">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss <a href="hw12.html">HW #12</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss Magnetization, Bound Current Densities, and Induced Magnetization</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-november-25th" number="1.28" class="hanchor" href="#thursday-november-25th"><span class="hnumber">1.28 </span> <span class="htext">Thursday, November 25th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p>No class</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="tuesday-november-30th" number="1.29" class="hanchor" href="#tuesday-november-30th"><span class="hnumber">1.29 </span> <span class="htext">Tuesday, November 30th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/KjXE9bfGa2Tgrcn1y4h7LGagIL-Tt7zKj-3v-cRT-BwjSMD31bgPsqg7d4YjmTOl.HeheorJiYh-0nUUW">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Course evaluations are open. Please submit!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Final exam room has been scheduled. It is Innovation Hall 131, which is the same room as the midterm. Day and time is Thursday, December 9th from 10:30 am to 1:15 pm.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss <a href="final.html">final exam study guide</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Discuss <a href="hw12.html">HW #12</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2 class="highlighted"><a name="thursday-december-2nd" number="1.30" class="hanchor" href="#thursday-december-2nd"><span class="hnumber">1.30 </span> <span class="htext">Thursday, December 2nd</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul class="">
+                    <li class="">
+                        <div class="block">
+                            <p>Last class</p>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="block">
+                            <p><a href="https://gmu.zoom.us/rec/share/epDQL1EXDoG8ujkVj1eJ0GWL_mPRPL_Pt3w41Z9IkF_h32aH2TW_OJxdldVlRp_n.b3brGpydrNUOAYKu">Class Video</a></p>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="block">
+                            <p><a href="hw12.html">HW #12</a> due</p>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="block">
+                            <p>Final review</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h2><a name="thursday-december-9th" number="1.31" class="hanchor" href="#thursday-december-9th"><span class="hnumber">1.31 </span> <span class="htext">Thursday, December 9th</span></a></h2>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p>Final Exam from 10:30 am - 1:15 pm. Location: Innovation Hall 131 (same as midterm).</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h1><a name="topics" number="2" class="hanchor" href="#topics"><span class="hnumber">2 </span> <span class="htext">Topics</span></a></h1>
+
+            </div>
+            <div class="block">
+                <p>This course covers the topics in Chapters 1-7 of the <a href="#textbook">textbook</a>.</p>
+
+            </div>
+            <div class="block">
+                <p>The catalog description is</p>
+
+            </div>
+            <div class="block">
+                <div class="blockquote">
+                    <p><a href="https://catalog.gmu.edu/search/?search=PHYS+305">Physics 305 Electromagnetic Theory</a></p>
+                    <p>Interaction of static charges, interaction of stationary currents, electromagnetic induction, and Maxwell’s equations.</p>
+                    <p>Required Prerequisites: PHYS 260<sup>C</sup> and PHYS 301<sup>*</sup>.</p>
+                    <p><sup>C</sup> Requires minimum grade of C.</p>
+                    <p><sup>*</sup> May be taken concurrently.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h1><a name="format-of-course" number="3" class="hanchor" href="#format-of-course"><span class="hnumber">3 </span> <span class="htext">Format of Course</span></a></h1>
+
+            </div>
+            <div class="block">
+                <p>The delivery of this course is centered on tutorials that introduce topics, provide examples, and require you to solve problems related to the examples. In general, I will not have a formal lecture prepared.</p>
+
+            </div>
+            <div class="block">
+                <ol>
+                    <li>
+                        <div class="block">
+                            <p>Most of what I would normally lecture on has been written into the tutorials and their examples.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>I have done this to maximize the amount of time available for students to ask question during class.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p><strong>If you do not work on the tutorials before class, you will not find class attendance helpful.</strong></p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h1><a name="discord" number="4" class="hanchor" href="#discord"><span class="hnumber">4 </span> <span class="htext">Discord</span></a></h1>
+
+            </div>
+            <div class="block">
+                <p>The first week of class, you should have received an email inviting you to join a Discord server. I will use Discord to answer questions.</p>
+
+            </div>
+
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h1><a name="succeeding-in-this-course" number="5" class="hanchor" href="#succeeding-in-this-course"><span class="hnumber">5 </span> <span class="htext">Succeeding in this Course</span></a></h1>
+
+            </div>
+            <div class="block">
+                <p>For many, this may be your first junior/senior-level physics course. To succeed, you may need to change the way you study. In addition to what is written below, please see <a href="http://physics.gmu.edu/~joe/PHYS303/syllabus.pdf">Joe Weingartner’s PHYS 303 syllabus</a> for his perspective and Feynman’s <a href="https://www.scotthyoung.com/learnonsteroids/grab/TranscriptFeynman.pdf">Never forget an idea again</a>.</p>
+
+            </div>
+            <div class="block">
+                <p>Success in this course depends primarily on two factors, in order of importance:</p>
+
+            </div>
+            <div class="block">
+                <ol>
+                    <li>
+                        <div class="block">
+                            <p>How many problems you solved “the right way” (I will discuss this in class)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>How much you discussed problems and concepts with others</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="block">
+                <p>Consistent with 1., nearly every concept is followed by an example and then a problem that you are expected to solve to determine if you understood the explanation of the concept and the example.</p>
+
+            </div>
+            <div class="block">
+                <div class="blockquote">
+                    <p>It is easy to find solved physics problems. Reading their solution before thinking about them is about as useful as learning to play basketball by watching a video. If you aren’t confident that you can solve a problem, attempt to solve it without the use of the solution and compare your solution with a classmate’s <em>before</em> looking at the solution.</p>
+                </div>
+            </div>
+            <div class="block">
+                <p>How to read:</p>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p>Read an explanation of a topic and fill in the missing steps.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Close the book or web page and attempt to repeat the explanation. Check your answer. If you got it wrong, re-visit the problem a day later.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>If you are successful, attempt to re-solve the problem differently (for example, using a different coordinate system or using Gauss’ Law instead of Coulomb’s law, etc.). Check answer. If you got it wrong, re-visit problem a day later. Keep a separate notebook with a list of things you had issues with and how you resolved them.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--
+%I learned quite a bit about how to think like a professional physicist from my advisor in graduate school. Anytime I would bring up a concept, he would start from first principles, set up a geometry, do dimensional analysis, and write down facts that he knew. Then he would repeat my question to me and attempt to answer it. Doing this repeately serves two purposes (1) It cements in the fundamental concepts by repeating them often and (2) gets you thinking about the fundamentals. I oftentimes rely on this approach when a student asks me about a problem on a physics-related topic that have not thought about for many years.
+-->
+            <!--
+%To succeed in physics, you should do the same. Use Google and/or a textbook only after you have written down everything you know and attempted to solve a problem with what you wrote down as a starting point. In addition, think about symmetry, dimensions, and related problems that you know how to solve and can use to check your answer by taking a limit. I’ll give many examples of this throughout the semester, but related to the last point, if you are given a 2-D problem, try to solve a simpler or 1-D problem for which you know the answer. Then try the more complex or 2-D problem. You probably happen to remember that the electric field falls off like $1/r$ for an infinite line of charge. It has to fall off more slowly than $1/r^2$, and you should know that Coulomb’s Law depends on $1/r^2$. If asked to calculate the field for a finite line of charge, first see if you can calculate the equation for the 1/r dependence. Then try the finite line problem - the equation will be a bit more complicated, but having solved the 1/r problem, you will have a prepped yourself. As another example, if asked to compute the field associated with a finite sheet of charge, compute the field for a finite line of charge first, check that your answer is correct in the limit that the line is long, and then try the sheet problem.
+-->
+            <!--
+%I will be giving you tips like this throughout the semester. Force yourself to follow the problem-solving approaches that I suggest. Many students have a problem-solving approach from freshman/sophomore physics that won’t work for more advanced courses (for example, relying on memory instead of relying on your ability to solve a problem by building up from a few basic principles that you have memorized).
+-->
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h1><a name="grading" number="6" class="hanchor" href="#grading"><span class="hnumber">6 </span> <span class="htext">Grading</span></a></h1>
+
+            </div>
+            <div class="block">
+                <p>Your grade for this course has two components:</p>
+
+            </div>
+            <div class="block">
+                <ol>
+                    <li>
+                        <div class="block">
+                            <p>Homework average (30%) - approximately one per week</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Exam average (70%) - one midterm and one final, equally weighted</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="block">
+                <p>Because of the size of this class, I may not grade all problems on every homework assignment. You score is based only on the problems selected for grading.</p>
+
+            </div>
+            <div class="block">
+                <p>There will be two exams during the semester and a cumulative final exam. The exams carry equal weight.</p>
+
+            </div>
+            <div class="block">
+                <p>The midterm will cover Chapters 1-3 of Griffiths</p>
+
+            </div>
+            <div class="block">
+                <p>The final exam will cover Chapters 4-6 of Griffiths</p>
+
+            </div>
+            <div class="block">
+                <p>The nominal percentage-to-letter grade conversion is (this is subject to change such that the required percentage score for a given letter grade is lower)</p>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p>&gt; 97: A+; 93 to 96.<span style="text-decoration:overline">9</span>: A-; 90 to 92.<span style="text-decoration:overline">9</span>: A-</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>87 to 89.<span style="text-decoration:overline">9</span>: B+; 83 to 86.<span style="text-decoration:overline">9</span>: B; 80 to 82.<span style="text-decoration:overline">9</span>: B-</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>77 to 79.<span style="text-decoration:overline">9</span>: C+; 73 to 76.<span style="text-decoration:overline">9</span>: C; 70 to 72.<span style="text-decoration:overline">9</span>: C-;</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>60 to 69.<span style="text-decoration:overline">9</span>: D</p>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>&lt; 60: F</p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h1><a name="textbook" number="7" class="hanchor" href="#textbook"><span class="hnumber">7 </span> <span class="htext">Textbook</span></a></h1>
+
+            </div>
+            <div class="block">
+                <p>I will follow the outline of the topics covered in chapters 1-6 (and 7, if time) in <a href="https://www.amazon.com/Introduction-Electrodynamics-4th-David-Griffiths/dp/0321856562">Introduction to Electrodynamics (4th Edition) by David J. Griffiths</a>. Note that the 3rd Edition is also widely available. You may buy either edition. However, I will reference pages and problem numbers from 4th edition.</p>
+
+            </div>
+
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h1><a name="suggested-references" number="8" class="hanchor" href="#suggested-references"><span class="hnumber">8 </span> <span class="htext">Suggested References</span></a></h1>
+
+            </div>
+            <div class="block">
+                <p>The following references may be used as additional study aids. They have been listed in order of importance/usefulness.</p>
+
+            </div>
+            <div class="block">
+                <p><a href="https://www.amazon.com/Electricity-Magnetism-Edward-M-Purcell/dp/1107014026/">Electricity and Magnetism (3rd Edition) by Edward M. Purcell and David J. Morin</a> covers the same topics as Griffiths at the same level. If you are looking for an alternative explanation, this textbook will be helpful. The book contains far more examples, discussion, and content than Griffiths. It also includes solutions. </p>
+
+            </div>
+            <div class="block">
+                <p><a href="http://www.amazon.com/Schaums-Outline-Electromagnetics-4th-Outlines/dp/0071831479/">Schaum’s outline of theory and problems of electromagnetics by Joseph A. Edminister</a> is a great reference for problems with full solutions and summaries of topics.</p>
+
+            </div>
+            <div class="block">
+                <p><a href="https://www.amazon.com/Div-Grad-Curl-All-That/dp/0393925161/">Div, Grad, Curl, and All That: An Informal Text on Vector Calculus (4th Edition) by H. M. Schey</a> is an excellent reference for the mathematical background that you need to understand for this course. The book contains a concise and clear review of topics that are covered in a vector calculus course (usually “Calculus III”).</p>
+
+            </div>
+            <div class="block">
+                <p><a href="https://www.amazon.com/Students-Guide-Maxwells-Equations/dp/0521701473/">A Student’s Guide to Maxwell’s Equations (1st Edition) by Daniel Fleisch</a> notes that “the focus is exclusively on Maxwell’s Equations, which means you won’t have to wade through hundreds of pages of related topics to get to the essential concepts. This leaves room for in-depth explanations of the most relevant features, such as the difference between charge-based and induced electric fields, the physical meaning of divergence and curl, and the usefulness of both the integral and differential forms of each equation.” A web page with detailed solutions to problems is available at <a href="http://www.danfleisch.com/maxwell/">http://www.danfleisch.com/maxwell/</a>.</p>
+
+            </div>
+            <div class="block">
+                <p><a href="https://www.amazon.com/Feynman-Lectures-Physics-Mainly-Electromagnetism/dp/020102117X/">The Feynman Lectures on Physics: Mainly Electromagnetism and Matter, Volume 2, 1977</a> contains excellent lecture-style presentations on Electricity and Magnetism. The full volume is available <a href="http://www.feynmanlectures.caltech.edu/II_toc.html">online</a>.</p>
+
+            </div>
+            <div class="block">
+                <p><a href="https://www.youtube.com/playlist?list=PLD07B2225BB40E582&amp;feature=plcp">Yale Lectures on Physics II</a> is a lecture series on topics typically covered in a second-semester physics course and does not cover the mathematics at the level required for this course. These videos may be useful as a review.</p>
+
+            </div>
+            <div class="block">
+                <p><a href="http://web.mit.edu/viz/soft/visualizations/IntermediateE&amp;M/classNotes_2010_final.pdf">8.07 Class Notes by John Belcher</a> covers the same topics as Griffiths and has additional examples.</p>
+
+            </div>
+            <div class="block">
+                <p>Other links:</p>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p><a href="http://questions.gmu.edu/guideontheside/tutorial/find-ebooks">Finding E-Books at Mason</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h1><a name="important-dates" number="9" class="hanchor" href="#important-dates"><span class="hnumber">9 </span> <span class="htext">Important Dates</span></a></h1>
+
+            </div>
+            <div class="block">
+                <p><a href="https://registrar.gmu.edu/calendars/fall_2021/#dates">Important Dates from Registrar</a></p>
+
+            </div>
+            <div class="block">
+                <p>No class:</p>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p>Tuesday, October 12th (Monday classes/labs meet Tuesday. Tuesday classes do not meet this week)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Thursday, November 28th (Thanksgiving)</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="block">
+                <p>Final Exam: Thursday, December 9th 10:30 am - 1:15 pm (<a href="https://registrar.gmu.edu/wp-content/uploads/Fall-2021-Final-Exam-Schedule.pdf">Final Exam Schedule</a>). Location and delivery method TBD.</p>
+
+            </div>
+            <div class="block">
+                <p>Last class: Thursday, December 5th</p>
+
+            </div>
+
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h1><a name="university-policy" number="10" class="hanchor" href="#university-policy"><span class="hnumber">10 </span> <span class="htext">University Policy</span></a></h1>
+
+            </div>
+            <div class="block">
+                <p>University Policies: <a href="http://universitypolicy.gmu.edu/">http://universitypolicy.gmu.edu/</a></p>
+
+            </div>
+
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h1><a name="disability-accommodations" number="11" class="hanchor" href="#disability-accommodations"><span class="hnumber">11 </span> <span class="htext">Disability Accommodations</span></a></h1>
+
+            </div>
+            <div class="block">
+                <p>If you have a learning disability or other condition that may affect academic performance, please: a) make sure documentation is on file with Office of Disability Services (<a href="http://ods.gmu.edu">http://ods.gmu.edu</a>) to determine the accommodations you need; and b) talk with me to discuss your accommodation needs.</p>
+
+            </div>
+
+        </div>
+        <div class="section">
+
+            <div class="block">
+                <h1><a name="counseling-and-student-support" number="12" class="hanchor" href="#counseling-and-student-support"><span class="hnumber">12 </span> <span class="htext">Counseling and Student Support</span></a></h1>
+
+            </div>
+            <div class="block">
+                <ul>
+                    <li>
+                        <div class="block">
+                            <p>Counseling and Psychological Services provides confidential psychological services, including 24/7 crisis intervention and consultation to faculty and staff: <a href="http://caps.gmu.edu/">http://caps.gmu.edu/</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block">
+                            <p>Student Support helps students negotiate life situations by connecting them with appropriate on- and off-campus resources
+                                : <a href="http://studentsupport.gmu.edu/referral-form/">http://studentsupport.gmu.edu/referral-form/</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

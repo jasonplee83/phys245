@@ -1,4 +1,26 @@
-## Welcome to GitHub Pages
+## PHYS245 - Recitation (Summer 2022)
+
+- Day and Time: Asynchronous, so we will not meet officially
+- Office Hours: Monday-Thursday either Zoom or Discord (please schedule a time if possible)
+- Optional Problem Solving Session via Zoom: Fridays, TBD
+- Discord URL: See email
+- Instructor: Dr. Jason P. Lee
+- Email: je@gmu.edu
+- Course URL: http://jasonplee83.github.io/phys245/
+
+_____
+
+Recitation is a required component of PHYS 245. The primary intent of the recitation is to refine your understanding of physics concepts, to develop your analysis and problem-solving skills.
+
+Each week there are a couple of activities/tutorials which you will work on individually. These activities are designed to help you think through new challenging concepts in physics. Your recitation grade is based on completeness and effort in the assignments each week.
+
+These activities are provided on MS Forms. If you are not familiar with MS Forms, you will need to sign in using your “@gmu.edu” email address. Each form will have specific deadlines, you can only submit once and as far as I can tell, you cannot save and continue later. So I would recommend giving yourself 1-2 hours set time each week to complete these activities, which is the normal time granted for recitation in a typical semester.
+
+All students are expected to adhere to the highest level of personal integrity and responsibility. This includes meeting course deadlines, communicating in a respectful manner with fellow students as well as instructors, and following Mason’s Honor Code.
+
+_____
+
+
 
 You can use the [editor on GitHub](https://github.com/jasonplee83/phys245/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
