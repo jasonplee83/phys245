@@ -29,6 +29,7 @@ _____
 | 1     | [Electric Potential](https://forms.office.com/r/j4rzzPAAjX)                                                                        | June 28th, 12:00am                | June 30th, 11:59pm                   |
 
 **NOTE: the first week's tutorials were created in different styles, as we weren't sure which format worked best for you. We value feedback, so please after you have completed the first two tutorials, please complete the following survey [here](https://forms.office.com/r/ieZCB5qeZ0) so we may format the remaining tutorials to your liking.**
+
 _____
 
 ## General Instructions
