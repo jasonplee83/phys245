@@ -35,8 +35,8 @@ _____
 
 | Week | Assignment                                                     | Start Date | End Date                  | Recordings** |
 | ---- | -------------------------------------------------------------- | ---------- | ------------------------- | ---------- |
-| 2    | A Model for Circuits Part I: Current and Resistance            |            | Wed, July 6th, 11:59pm    |            |
-| 2    | A Model for Circuits Part II: Potential Difference and Current |            | Fri, July 8th, 11:59pm    |            |
+| 2    | [A Model for Circuits Part I: Current and Resistance](https://forms.office.com/r/CGv4n1jcb3)            | Sat, July 2nd, 12:00pm           | Wed, July 6th, 11:59pm    |            |
+| 2    | [A Model for Circuits Part II: Potential Difference and Current](https://forms.office.com/r/RHhMFGL15a) | Sat, July 2nd, 12:00pm           | Wed, July 6th, 11:59pm    |            |
 | 3    | Magnetism Part I: Magnetic Interactions                        |            | Tues, July 12th, 11:59pm  |            |
 | 3    | Magnetism Part II: Lenz's Law                                  |            | Thurs, July 14th, 11:59pm |            |
 | 4    | Optics: Mirrors and Lenses                                     |            | Tues, July 19th, 11:59pm  |            |
