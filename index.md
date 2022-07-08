@@ -14,7 +14,7 @@ Recitation is a required component of PHYS 245. The primary intent of the recita
 
 Each week there are a couple of activities/tutorials which you will work on **individually**. These activities are designed to help you think through new challenging concepts in physics. Your recitation grade is based on completeness and effort in the assignments each week. **NOTE: your recitation grade is only 10% of your lecture grade. All tutorials count, nothing is dropped.**
 
-These activities are provided on **MS Forms** (works best in Chrome). If you are not familiar with MS Forms, you will need to sign in using your “@gmu.edu” email address. Each form will have specific deadlines, you can only submit once and as far as I can tell, you cannot save and continue later. So I would recommend giving yourself 1-2 hours set time each week to complete these activities, which is the normal time granted for recitation in a typical semester.
+These activities are provided on **MS Forms** (works best in Chrome). If you are not familiar with MS Forms, you will need to sign in using your “@gmu.edu” email address. Each form will have specific deadlines, you can only submit once and as far as I can tell, you can save and continue later. Ideally each activity should take about 1-2 hours to complete, which is the normal time granted for recitation in a typical semester.
 
 All students are expected to adhere to the highest level of personal integrity and responsibility. This includes meeting course deadlines, communicating in a respectful manner with fellow students as well as instructors, and following Mason’s Honor Code. **NOTE: MS Forms records everyone's responses so plagiarism can be checked for each assignment.**
 
@@ -32,12 +32,13 @@ _____
 - ** --> Password in Discord under #recordings
 - **NOTE:** the first week's tutorials were created in different styles, as we weren't sure which format worked best for you. We value feedback, so please after you have completed the first two tutorials, **please complete the following survey [here](https://forms.office.com/r/ieZCB5qeZ0) so we may format the remaining tutorials to your liking**.
 - The remaining tutorials reflect the results of this survey.
+- *** There are no recordings this week because no one showed up with questions.
 
 | Week | Assignment                                                     | Start Date | End Date                  | Recordings** |
 | ---- | -------------------------------------------------------------- | ---------- | ------------------------- | ---------- |
 | 2    | [A Model for Circuits Part I: Current and Resistance](https://forms.office.com/r/CGv4n1jcb3)            | Sat, July 2nd, 12:00pm           | Wed, July 6th, 11:59pm    |            |
-| 2    | [A Model for Circuits Part II: Potential Difference and Current](https://forms.office.com/r/RHhMFGL15a) | Sat, July 2nd, 12:00pm           | Wed, July 6th, 11:59pm    |            |
-| 3    | Magnetism Part I: Magnetic Interactions                        |            | Tues, July 12th, 11:59pm  |            |
+| 2    | [A Model for Circuits Part II: Potential Difference and Current](https://forms.office.com/r/RHhMFGL15a) | Sat, July 2nd, 12:00pm           | Wed, July 6th, 11:59pm    | ***           |
+| 3    | [Magnetism Part I: Magnetic Interactions](https://forms.office.com/r/ScpSka0nb4)                        | Fri, July 8th, 7:00pm           | Tues, July 12th, 11:59pm  |            |
 | 3    | Magnetism Part II: Lenz's Law                                  |            | Thurs, July 14th, 11:59pm |            |
 | 4    | Optics: Mirrors and Lenses                                     |            | Tues, July 19th, 11:59pm  |            |
 | 4    | Two-Source Interference                                        |            | Thurs, July 21st, 11:59pm |            |
