@@ -41,7 +41,7 @@ _____
 | 3    | [Magnetism Part I: Magnetic Interactions](https://forms.office.com/r/ScpSka0nb4)                        | Fri, July 8th, 7:00pm           | Tues, July 12th, 11:59pm  |            |
 | 3    | [Magnetism Part II: Lenz's Law](https://forms.office.com/r/5vmirdj8BC)                                  | Sat, July 9th, 12:00am           | Thurs, July 14th, 11:59pm | ***           |
 | 4    | [Optics: Mirrors and Lenses](https://forms.office.com/r/MfgxrnJJAJ)                                     | Fri, July 15th, 7:30pm           | Tues, July 19th, 11:59pm  |            |
-| 4    | [Two-Source Interference](https://forms.office.com/r/5gSFPeHAQw)                                        | Fri, July 15th, 7:30pm           | Thurs, July 21st, 11:59pm |            |
+| 4    | [Two-Source Interference](https://forms.office.com/r/5gSFPeHAQw)                                        | Fri, July 15th, 7:30pm           | Thurs, July 21st, 11:59pm | ***           |
 | 5    | [Atomic Spectra & Wave Properties of Matter](https://forms.office.com/r/x4532qR7Bs)                     | Fri, July 15th, 7:30pm           | Tues, July 26th, 11:59pm  |            |
 
 _____
