@@ -25,24 +25,24 @@ _____
 
 | Week | Assignment                                                              | Start Date               | End Date                  | Notes                               | Recordings** |
 | ---- | ----------------------------------------------------------------------- | ------------------------ | ------------------------- | ----------------------------------- | ---------- |
-| 1    | [Introduction & Electric Fields](https://forms.office.com/r/Tp5EH5CxPh) | Sun, June 26th, 12:00am  | Tues, June 28th, 11:59pm  | This is the 1st style               |            |
-| 1    | [Electric Potential](https://forms.office.com/r/j4rzzPAAjX)             | Tues, June 28th, 12:00am | Thurs, June 30th, 11:59pm | This is the 2nd style; also see "*" |  [Week 1](https://gmu.zoom.us/rec/play/FwWPtRKz1OGeVjzRwvFHP7xThbzeDjbfhMSsFODZLGYEmqOf8vqrLkF1oLh5PIwUeaYW3RRBxeodSxnj.c4ixzWDfujY_SbcX)          |
+| 1    | [Introduction & Electric Fields]() | Sun, June 26th, 12:00am  | Tues, June 28th, 11:59pm  | This is the 1st style               |            |
+| 1    | [Electric Potential]()             | Tues, June 28th, 12:00am | Thurs, June 30th, 11:59pm | This is the 2nd style; also see "*" |  [Week 1]()          |
 
 - "*" --> This tutorial requires you to **upload a drawing to a diagram**; there will be periods where you will have to do that depending on the tutorial. Your drawing can be any file format, and it can be done on either a tablet or paper. You may want to make sure you have a ruler/protractor handy.
 - ** --> Password in Discord under #recordings
-- **NOTE:** the first week's tutorials were created in different styles, as we weren't sure which format worked best for you. We value feedback, so please after you have completed the first two tutorials, **please complete the following survey [here](https://forms.office.com/r/ieZCB5qeZ0) so we may format the remaining tutorials to your liking**.
+- **NOTE:** the first week's tutorials were created in different styles, as we weren't sure which format worked best for you. We value feedback, so please after you have completed the first two tutorials, **please complete the following survey [here]() so we may format the remaining tutorials to your liking**.
 - The remaining tutorials reflect the results of this survey.
 - *** There are no recordings this week because no one showed up with questions.
 
 | Week | Assignment                                                     | Start Date | End Date                  | Recordings** |
 | ---- | -------------------------------------------------------------- | ---------- | ------------------------- | ---------- |
-| 2    | [A Model for Circuits Part I: Current and Resistance](https://forms.office.com/r/CGv4n1jcb3)            | Sat, July 2nd, 12:00pm           | Wed, July 6th, 11:59pm    |            |
-| 2    | [A Model for Circuits Part II: Potential Difference and Current](https://forms.office.com/r/RHhMFGL15a) | Sat, July 2nd, 12:00pm           | Wed, July 6th, 11:59pm    | ***           |
-| 3    | [Magnetism Part I: Magnetic Interactions](https://forms.office.com/r/ScpSka0nb4)                        | Fri, July 8th, 7:00pm           | Tues, July 12th, 11:59pm  |            |
-| 3    | [Magnetism Part II: Lenz's Law](https://forms.office.com/r/5vmirdj8BC)                                  | Sat, July 9th, 12:00am           | Thurs, July 14th, 11:59pm | ***           |
-| 4    | [Optics: Mirrors and Lenses](https://forms.office.com/r/MfgxrnJJAJ)                                     | Fri, July 15th, 7:30pm           | Tues, July 19th, 11:59pm  |            |
-| 4    | [Two-Source Interference](https://forms.office.com/r/5gSFPeHAQw)                                        | Fri, July 15th, 7:30pm           | Thurs, July 21st, 11:59pm | ***           |
-| 5    | [Atomic Spectra & Wave Properties of Matter](https://forms.office.com/r/x4532qR7Bs)                     | Fri, July 15th, 7:30pm           | Tues, July 26th, 11:59pm  |            |
+| 2    | [A Model for Circuits Part I: Current and Resistance]()            | Sat, July 2nd, 12:00pm           | Wed, July 6th, 11:59pm    |            |
+| 2    | [A Model for Circuits Part II: Potential Difference and Current]() | Sat, July 2nd, 12:00pm           | Wed, July 6th, 11:59pm    | ***           |
+| 3    | [Magnetism Part I: Magnetic Interactions]()                        | Fri, July 8th, 7:00pm           | Tues, July 12th, 11:59pm  |            |
+| 3    | [Magnetism Part II: Lenz's Law]()                                  | Sat, July 9th, 12:00am           | Thurs, July 14th, 11:59pm | ***           |
+| 4    | [Optics: Mirrors and Lenses]()                                     | Fri, July 15th, 7:30pm           | Tues, July 19th, 11:59pm  |            |
+| 4    | [Two-Source Interference]()                                        | Fri, July 15th, 7:30pm           | Thurs, July 21st, 11:59pm | ***           |
+| 5    | [Atomic Spectra & Wave Properties of Matter]()                     | Fri, July 15th, 7:30pm           | Tues, July 26th, 11:59pm  |            |
 
 _____
 
